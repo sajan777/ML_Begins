@@ -1,0 +1,24 @@
+#create the database in python
+
+1.import the module
+
+from pymysql import*'
+2.make connection
+
+conobj = connect(db='database_name',user='root',passwd='pass',host='localhost')
+
+3.create cursor(temporary storage area)
+
+curobj = conobj.cursor()
+
+4.Execute commands
+
+curobj.execute("Insert/update/delete/select')
+
+5.commit the connection
+
+conobj.commit()
+
+6.close the connection
+
+conobj.close()
