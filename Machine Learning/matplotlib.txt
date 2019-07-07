@@ -1,0 +1,74 @@
+#Histogram plot
+import matplotlib.pyplot as pl
+Frequencies = [0.1,0.2,5.6,4.1,8.2,1.1,4.6,9.1,7.7,9.0,1.6,1.9,4.2.3.9,5.8]
+range = (0,10.0)
+bins = 10
+plt.hist(Frequencies,bins,range,color=['Green','Blue','Yellow','Pink','red','grey','Black','orange','Green'],histtype='bar',rwidth=0.7)
+plt.xlabel('Ages')
+plt.ylabel('Bins')
+
+plt.title('Histogram Plot')
+
+plt.grid()
+plt.show()
+Bar Graph
+import matplotlib.pyplot as plt
+
+x = [1,2,3,4,5,6,7,8,9]
+y = [15,35,41,11,56,72,61,89,94]
+
+tick_labels = ['Jan','Feb','March','April','May','June','July','August','Sep']
+plt.bar(x,y,tick_label = tick_labels,width=0.8,color=['Green','Blue','Yellow','Pink','red','grey','Black','orange','Green'])
+plt.ylabel('Y-axis')
+plt.title('Bar Graph')
+plt.grid()
+plt.show()
+
+Subplot plot
+
+x1 = np.linspace(0.0,5.0)
+x2 = np.linspace(0.0,2.0)
+
+y1 = np.cos(2*np.pi*x1)*np.exp(-x1)
+y2 = np.cos(2*np.pi*x2)
+
+plt.subplot(2,1,1)
+plt.plot(x1,y1,'o-')
+plt.title('Subplot 1')
+plt.xlabel('X1')
+plt.ylabel('Y1')
+plt.grid()
+
+
+plt.subplot(2,1,2)
+plt.plot(x2,y2,'*-')
+plt.title('Subplot 2')
+plt.xlabel('X2')
+plt.ylabel('Y2')
+
+#Line Plot
+
+import numpy as np
+time1= np.arange(0.0,2.0,0.01)#X-axis
+Voltage1= 1+np.cos(2*np.pi*time1)#Y-axis
+
+time2 =np.arange(0.0,2.0,0.01)#X-axis
+Voltage2 =1+np.sin(2*np.pi*time2)#Y-axis
+
+plt.plot(time1,Voltage1,'o-')#Cosine
+plt.plot(time2,Voltage2,'g')#Sine
+
+plt.xlabel('Time')
+plt.ylabel('Volatage')
+plt.title('Cosine Wave')
+plt.grid()
+plt.show()
+
+import matplotlib.pyplot as plt
+x = [1,2,3,4,5,6]
+y = [1,5,7,8,9,11]
+plt.plot(x,y)
+plt.xlabel('X axis')
+plt.xlabel('Y axis')
+plt.title('First Graph')
+
